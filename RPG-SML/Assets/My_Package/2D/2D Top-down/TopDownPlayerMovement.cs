@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D)), RequireComponent(typeof(Animator))]
 public class TopDownPlayerMovement : MonoBehaviour, IDataPersistence
 {
-    public static TopDownPlayerMovement instance { get; private set; }
+    [HideInInspector] public static TopDownPlayerMovement instance { get; private set; }
     
 
     [Header("If you would like preset values, use the context menu!")]
@@ -19,7 +19,7 @@ public class TopDownPlayerMovement : MonoBehaviour, IDataPersistence
     private float _curSpeed;
 
     private bool _isMoving;
-    public bool _canMove;
+    private bool _canMove;
 
     private Vector2 _facingLeft;
     private Vector2 _facingRight;
@@ -117,4 +117,14 @@ public class TopDownPlayerMovement : MonoBehaviour, IDataPersistence
     }
 
     #endregion Save-Load
+
+    public void EnterDialogue()
+    {
+        _canMove = false;
+    }
+
+    public void EndDialogue()
+    {
+        _canMove = true;
+    }
 }

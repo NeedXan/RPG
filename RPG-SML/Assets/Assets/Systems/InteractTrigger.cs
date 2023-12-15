@@ -1,3 +1,4 @@
+using Conversa.Runtime;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,7 @@ public class InteractTrigger : MonoBehaviour
     [SerializeField] bool isDialogue;
 
     public bool canInteract;
-    [HideInInspector] public bool canInteractTemp;
+    public bool canInteractTemp;
 
     bool playerInTrigger;
 
@@ -32,7 +33,11 @@ public class InteractTrigger : MonoBehaviour
         {
             if (isDialogue)
             {
-                
+                canInteractTemp = false;
+
+                TopDownPlayerMovement.instance.EnterDialogue();
+
+                gameObject.GetComponent<ConversaController>().Begin();
             }
         }
     }

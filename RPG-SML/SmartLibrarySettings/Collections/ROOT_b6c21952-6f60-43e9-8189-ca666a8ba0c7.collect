@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d440d2d81dcb2b47a30a4bf1747c34f, type: 3}
+  m_Name: ROOT
+  m_EditorClassIdentifier: 
+  _root: {fileID: 1}
+  _parent: {fileID: 0}
+  _parentID:
+    _serializedGuid: 
+  _subcollections:
+  - {fileID: 0}
+  _subcollectionIDs:
+  - _serializedGuid: b658f0aac5f9ab429b016fb9cd1823be
+  _collectionName: ROOT
+  _id:
+    _serializedGuid: 5219c2b6606fe9438189ca666a8ba0c7
+  _icon: {fileID: 0}
+  _rules:
+    _rules: []
+  _items:
+    _hashSetList: []
+  _itemDisplaySize: 100
+  _viewStyle: 0
+  _useCollectionViewSettings: 0
+  _allIds: 
+  _allCollections: []
+  _itemCollectionIdPairs:
+  - item:
+      _guid: f05b422574076c641954af5bde1a5a4b
+    collectionIds:
+    - _serializedGuid: 0ef1e72895730b49aaefa0ff0c63e28f
+    - _serializedGuid: b658f0aac5f9ab429b016fb9cd1823be
+  - item:
+      _guid: 533edf3464e03a74a8b08dc8995f3765
+    collectionIds:
+    - _serializedGuid: 6412b325e9b89e4097fe605bb136fe09
+    - _serializedGuid: b658f0aac5f9ab429b016fb9cd1823be
+  references:
+    version: 2
+    RefIds: []
